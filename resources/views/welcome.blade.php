@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <!-- Styles -->
         <style>
             html, body {
@@ -58,10 +58,6 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
     </head>
     <body>
@@ -79,7 +75,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Lara-bell Todo App
+                </div>
+
+                <div id="todo-app" class="m-3">
+                    <a class="btn btn-primary btn-lg" href="{{ route('tasks.index') }}" role="button">Go App</a>
                 </div>
 
                 <div class="links">
@@ -92,4 +92,5 @@
             </div>
         </div>
     </body>
+    <script src="{{asset('js/app.js')}}"></script>
 </html>
